@@ -675,6 +675,12 @@ margin-left: 93px;
   height: 50px;
 }
 
+.mail::placeholder{
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.25;
+  padding: 15px 16px;
+}
+
 .footer-send{
  display: flex;
  justify-content: center;
