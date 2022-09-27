@@ -72,33 +72,34 @@
                 <use xlink:href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-            <div>
+            <form class="form">
               <h2>Залиште свої дані, ми вам передзвонимо</h2>
-              <form>
+              <div class="form-field">
                 <label for="name">Ім'я</label>
                 <input type="text" name="name" id="name" />
+              </div>
+              <div class="form-field">
                 <label for="tel">Телефон</label>
                 <input type="tel" name="tel" id="tel" />
+              </div>
+              <div class="form-field">
                 <label for="email">Пошта</label>
                 <input type="tel" name="email" id="email" />
-                <label for="coment">Коментар</label>
-                <textarea
-                  name="coment"
-                  rows="5"
-                  placeholder="Введіть текст"
-                  id="coment"
-                ></textarea>
-                <input
-                  type="checkbox"
-                  name="topsc"
-                  value="condition"
-                  id="condition"
-                />
-                <label for="condition"
-                  >Погоджуюся з розсилкою та приймаю Умови договору</label
-                >
-              </form>
-            </div>
+              </div>
+
+              <label for="coment">Коментар</label>
+              <textarea
+                name="coment"
+                rows="5"
+                placeholder="Введіть текст"
+                id="coment"
+              ></textarea>
+              <input type="checkbox" name="policy" id="policy" />
+              <label for="policy"
+                >Погоджуюся з розсилкою та приймаю Умови договору</label
+              >
+              <button type="submit">Відправити</button>
+            </form>
           </div>
         </div>
       </section>
@@ -116,7 +117,7 @@
               <h3 class="post-title">Увага до деталей</h3>
               <p class="post-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
+                формування позиції
               </p>
             </li>
             <li class="post-link">
