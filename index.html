@@ -75,21 +75,37 @@
 
             <form class="form">
               <h2 class="form-text">Залиште свої дані, ми вам передзвонимо</h2>
-              <div class="form-field">
-                <label for="name">Ім'я</label>
-                <input type="text" name="name" id="name" />
+              <div>
+                <span class="modal-text">Ім'я</span>
+                <label class="form-field">
+                  <input class="input" type="text" name="name" />
+                  <svg width="18" height="18" class="modal-svg">
+                    <use xlink:href="./images/icons.svg#icon-person"></use>
+                  </svg>
+                </label>
               </div>
-              <div class="form-field">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel" />
+              <div>
+                <span class="modal-text">Телефон</span>
+                <label class="form-field">
+                  <input class="input" type="tel" name="tel" />
+                  <svg width="18" height="18" class="modal-svg">
+                    <use xlink:href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </label>
               </div>
-              <div class="form-field">
-                <label for="email">Пошта</label>
-                <input type="tel" name="email" id="email" />
+              <div>
+                <span class="modal-text">Пошта</span>
+                <label class="form-field">
+                  <input class="input" type="email" name="email" />
+                  <svg width="18" height="18" class="modal-svg">
+                    <use xlink:href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                </label>
               </div>
-              <div class="form-field">
-                <label for="coment">Коментар</label>
-                <textarea
+              <div>
+                <span class="modal-text">Коментар</span>
+                <label class="form-field">
+                  <textarea
                   name="coment"
                   rows="5"
                   placeholder="Введіть текст"
@@ -101,7 +117,7 @@
               <input type="checkbox" name="policy" id="policy" class="policy" />
               <label for="policy"
                 >Погоджуюся з розсилкою та приймаю
-                <a href="">Умови договору</a></label
+                <a href="" class="dog-link">Умови договору</a></label
               >
 
               <button type="submit" class="submit">Відправити</button>
