@@ -272,7 +272,8 @@ text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              visibility 250 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden{
@@ -350,6 +351,7 @@ text-align: center;
   color: rgba(117, 117, 117, 0.5);
  }
 
+.coment:hover,
 .coment:focus{
   outline: none;
   border: 1px solid var(--logo-color);
@@ -383,12 +385,14 @@ text-align: center;
   cursor: pointer;
 }
 
+.input:hover,
 .input:focus{
   outline: none;
   border: 1px solid var(--logo-color);
 }
 
-.input:focus + .modal-svg{
+.input:hover + .modal-svg,
+.input:focus+.modal-svg{
   fill: var(--logo-color);
 }
 
@@ -829,6 +833,12 @@ margin-left: 93px;
   border-radius: 4px;
   border: none;
   margin-left: 12px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send:hover,
+.send:focus{
+  background-color: var(--logo-secondary-color);
 }
 
 .send-link{
