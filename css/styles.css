@@ -775,6 +775,9 @@ margin-left: 93px;
 }
 
 .send{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 28px;
   cursor: pointer;
   height: 50px;
@@ -791,10 +794,6 @@ margin-left: 93px;
   line-height: 1.87;
   color: var(--nav-color);
   margin-right: 10px;
-}
-
-.icon-send{
-
 }
 
 .grid{

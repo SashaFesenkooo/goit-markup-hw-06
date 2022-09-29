@@ -72,54 +72,49 @@
                 <use xlink:href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-
             <form class="form">
               <h2 class="form-text">Залиште свої дані, ми вам передзвонимо</h2>
-              <div>
-                <span class="modal-text">Ім'я</span>
-                <label class="form-field">
-                  <input class="input" type="text" name="name" />
-                  <svg width="18" height="18" class="modal-svg">
-                    <use xlink:href="./images/icons.svg#icon-person"></use>
-                  </svg>
-                </label>
-              </div>
-              <div>
-                <span class="modal-text">Телефон</span>
-                <label class="form-field">
-                  <input class="input" type="tel" name="tel" />
-                  <svg width="18" height="18" class="modal-svg">
-                    <use xlink:href="./images/icons.svg#icon-phone"></use>
-                  </svg>
-                </label>
-              </div>
-              <div>
-                <span class="modal-text">Пошта</span>
-                <label class="form-field">
-                  <input class="input" type="email" name="email" />
-                  <svg width="18" height="18" class="modal-svg">
-                    <use xlink:href="./images/icons.svg#icon-email"></use>
-                  </svg>
-                </label>
-              </div>
-              <div>
-                <span class="modal-text">Коментар</span>
-                <label class="form-field">
-                  <textarea
+              <span class="modal-text">Ім'я</span>
+              <label class="form-field">
+                <input class="input" type="text" name="name" />
+                <svg width="18" height="18" class="modal-svg">
+                  <use xlink:href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </label>
+              <span class="modal-text">Телефон</span>
+              <label class="form-field">
+                <input class="input" type="tel" name="tel" />
+                <svg width="18" height="18" class="modal-svg">
+                  <use xlink:href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </label>
+              <span class="modal-text">Пошта</span>
+              <label class="form-field">
+                <input class="input" type="email" name="email" />
+                <svg width="18" height="18" class="modal-svg">
+                  <use xlink:href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </label>
+              <span class="modal-text">Коментар</span>
+              <label class="form-field">
+                <textarea
                   name="coment"
                   rows="5"
                   placeholder="Введіть текст"
                   id="coment"
                   class="coment"
                 ></textarea>
-              </div>
-
-              <input type="checkbox" name="policy" id="policy" class="policy" />
-              <label for="policy"
-                >Погоджуюся з розсилкою та приймаю
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                  class="policy"
+                />
+                Погоджуюся з розсилкою та приймаю
                 <a href="" class="dog-link">Умови договору</a></label
               >
-
               <button type="submit" class="submit">Відправити</button>
             </form>
           </div>
@@ -602,12 +597,10 @@
               />
             </form>
             <button type="button" class="send">
-              <div class="footer-send">
-                <span class="send-link">Підписатися</span>
-                <svg width="24" height="24" class="icon-send">
-                  <use xlink:href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </div>
+              <span class="send-link">Підписатися</span>
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </div>
         </div>
