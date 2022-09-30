@@ -818,12 +818,6 @@ margin-left: 93px;
   line-height: 1.25;
 }
 
-.footer-send{
- display: flex;
- justify-content: center;
- align-items: center;
-}
-
 .send{
   display: flex;
   justify-content: center;
