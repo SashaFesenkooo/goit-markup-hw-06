@@ -83,12 +83,15 @@ p {
 
 
 .logo {
+  display: inline-block;
+  padding: 24px 0 25px;
   color: var(--logo-color);
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
+  ;
 }
 
 .slogan {
@@ -697,11 +700,6 @@ p {
 }
 
 /* Footer */
-
-.logo.secondary {
-  display: inline-block;
-  margin-bottom: 20px;
-}
 
 .footer {
   background-color: var(--headfoot-color);
