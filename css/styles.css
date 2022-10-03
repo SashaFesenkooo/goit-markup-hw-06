@@ -60,6 +60,7 @@ p {
 .section.hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .section.features {
@@ -72,15 +73,14 @@ p {
 
                                      /*  Header*/
 
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+
 .flex-container {
   display: flex;
   align-items: center;
 }
-
-.page-header {
-  border-bottom: 1px solid var(--border-color);
-}
-
 
 .logo {
   display: inline-block;
@@ -91,7 +91,6 @@ p {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
-  ;
 }
 
 .slogan {
@@ -103,29 +102,33 @@ p {
   margin-left: 93px;
 }
 
-.site-nav .site-nav__list:not(:last-child) {
-  margin-right: 50px;
-}
-
 .site-nav__list,
 .auth-nav__list {
   position: relative;
 }
 
-.link-ttl {
+.site-nav__list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
-
-  color: var(--logo-color);
+  color: var(--main-font-color);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-ttl::after {
+.site-nav__link--current {
+  color: var(--logo-color);  
+}
+
+.site-nav__link--current::after {
   content: '';
   position: absolute;
   display: block;
@@ -137,22 +140,8 @@ p {
   border-radius: 2px;
 }
 
-.link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--main-font-color);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:hover,
-.link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--logo-color);
 }
 
@@ -161,11 +150,11 @@ p {
   margin-left: auto;
 }
 
-.auth-nav .auth-nav__list:not(:last-child) {
+.auth-nav__list:not(:last-child) {
   margin-right: 50px;
 }
 
-.copy {
+.auth-nav__copy {
   display: inline-flex;
   align-items: center;
   padding-top: 32px;
@@ -176,47 +165,38 @@ p {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.copy:hover,
-.copy:focus {
+.auth-nav__copy:hover,
+.auth-nav__copy:focus {
   color: var(--logo-color);
 }
 
-.envelope {
+.auth-nav__envelope {
   margin-right: 10px;
   fill: var(--second-font-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .envelope:hover{
-  fill: var(--logo-color);
-} */
-
-.copy:hover .envelope,
-.copy:focus .envelope {
-  fill: var(--logo-color);
-}
-
-.smartphone {
+.auth-nav__smartphone {
   margin-right: 10px;
   fill: var(--second-font-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.auth-nav__copy:hover .auth-nav__envelope,
+.auth-nav__copy:focus .auth-nav__envelope {
+  fill: var(--logo-color);
+}
 
-.copy:hover .smartphone,
-.copy:focus .smartphone {
+.auth-nav__copy:hover .auth-nav__smartphone,
+.auth-nav__copy:focus .auth-nav__smartphone {
   fill: var(--logo-color);
 }
 
 
-/* Hero */
+                               /* Hero */
 
-.section.hero {
-  text-align: center;
-}
 
 .hero {
   background-color: var(--headfoot-color);
@@ -254,7 +234,6 @@ p {
   font-weight: 700;
   line-height: 1.87;
   cursor: pointer;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -299,7 +278,7 @@ p {
   border-radius: 4px;
 }
 
-.close-btn {
+.stud {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -316,8 +295,8 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.stud:hover,
+.stud:focus {
   fill: var(--logo-color);
 }
 
