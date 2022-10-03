@@ -70,7 +70,7 @@ p {
   padding-top: 47px;
 }
 
-/*  Header*/
+                                     /*  Header*/
 
 .flex-container {
   display: flex;
@@ -103,11 +103,12 @@ p {
   margin-left: 93px;
 }
 
-.site-nav .item-list:not(:last-child) {
+.site-nav .site-nav__list:not(:last-child) {
   margin-right: 50px;
 }
 
-.item-list {
+.site-nav__list,
+.auth-nav__list {
   position: relative;
 }
 
@@ -160,7 +161,7 @@ p {
   margin-left: auto;
 }
 
-.auth-nav .item-list:not(:last-child) {
+.auth-nav .auth-nav__list:not(:last-child) {
   margin-right: 50px;
 }
 
